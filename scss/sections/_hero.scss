@@ -13,7 +13,13 @@
   text-align: center;
   overflow: hidden;
 
+@media screen and (min-width:768px) {
   
+}
+@media screen and (min-width:1200px) {
+    padding-top: 200px;
+  padding-bottom: 200px;
+}
 &__title {
   color: $title-color;
   text-align: center;
