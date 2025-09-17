@@ -218,13 +218,88 @@ h1, h2, h3, p {
 }
 
 .mobule {
+  padding: 48px 0 48px 40px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: white;
   opacity: 1;
+}
+.mobule__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.mobule__icon {
+  width: 19px;
+  height: 19px;
+  fill: #212121;
+}
+.mobule__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 150px;
+}
+.mobule__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.mobule__link:is(:hover, :focus) {
+  color: #2196f3;
+}
+.mobule__items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.mobule__contakt {
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.mobule__contakt:is(:hover, :focus) {
+  color: #2196f3;
+}
+.mobule__itm:first-child .mobule__contakt {
+  font-size: 34px;
+  color: #2196f3;
+}
+.mobule__frap {
+  display: flex;
+  gap: 10px;
+}
+.mobule__social {
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22; /* 122.222% */
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+}
+.mobule__elm:not(:last-child) .mobule__social::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-left: 10px;
 }
 
 .is-hidden {
